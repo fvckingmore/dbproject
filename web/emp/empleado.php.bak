@@ -1,0 +1,40 @@
+<?php
+	if(!empty($_GET)) {
+		if($_GET["status"] == "ok") {
+			echo "<h2>Registro agregrado correctamente</h2>";
+
+		} else if($_GET["status"] == "error") {
+			echo "<h2>Error al agregar registro</h2>";
+		}
+	}
+?>
+
+<form action="addemp.php" method="post">
+	<h2>Empleado</h2>	
+	<label>Cedula:</label>
+	<input type="text" name="ci" required><br><br>
+	<label>Farmacia:</label>
+	<input type="text" name="farmacia" required><br><br>
+	<label>Nombre:</label>
+	<input type="text" name="nombre" required><br><br>
+	<label>Apellido:</label>
+	<input type="text" name="apellido" required><br><br>
+	<label>Edad:</label>
+	<input type="text" name="edad" required><br><br>
+	<!--Cargo: Farmaceutico en BD-->
+	<label>Telefono:</label>
+	<input type="text" name="telefono" required><br><br>
+
+	<label>Cargo:</label>
+	<select name="cargo[]">
+		<option value="administrativo">Administrativo</option>
+		<option value="analista">Analista de compra</option>
+		<option value="auxiliar">Auxiliar de farmacia</option>
+		<option value="vigilante">Vigilante</option>
+		<option value="cajero">Cajero</option>
+
+	</select><br><br>
+  
+	<input type="submit" value="Submit">
+</form>
+

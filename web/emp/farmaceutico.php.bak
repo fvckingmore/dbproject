@@ -1,0 +1,41 @@
+<?php
+	if(!empty($_GET)) {
+		if($_GET["status"] == "ok") {
+			echo "<h2>Registro agregrado correctamente</h2>";
+
+		} else if($_GET["status"] == "error") {
+			echo "<h2>Error al agregar registro</h2>";
+		}
+	}
+?>
+
+<form action="addfarm.php" method="post">
+	<h2>Farmaceutico</h2>	
+	<label>Cedula:</label>
+  	<input type="text" name="ci" required><br><br>
+  	<label>Farmacia:</label>
+  	<input type="text" name="farmacia" required><br><br>
+  	<label>Nombre:</label>
+  	<input type="text" name="nombre" required><br><br>
+  	<label>Apellido:</label>
+  	<input type="text" name="apellido" required><br><br>
+  	<label>Edad:</label>
+  	<input type="text" name="edad" required><br><br>
+  	<!--Cargo: Farmaceutico en BD-->
+  	<label>Telefono:</label>
+  	<input type="text" name="telefono" required><br><br>
+	
+	<h2>Titulo</h2>	
+	<label>Univesidad:</label>
+  	<input type="text" name="universidad" required><br><br>
+  	<label>Fecha:</label>
+	<input type="date" name="fecha"><br><br>
+  	<label>Numero Registro:</label>
+  	<input type="text" name="registro" required><br><br>
+  	<label>Permiso Sanitario:</label>
+  	<input type="text" name="sanitario" required><br><br>
+  	<label>Numero Colegiatura:</label>
+  	<input type="text" name="colegiatura" required><br><br>
+  	<input type="submit" value="Submit">
+</form>
+

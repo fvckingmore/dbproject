@@ -1,0 +1,76 @@
+*{
+    
+    font-family: sans-serif;
+    font-size: 12px;
+}
+
+body{
+    background-image: url("../assets/imagen1.jpg");
+}
+
+form{
+    display: grid;
+    
+    grid-template-columns: 200px 200px;
+    row-gap: 5px;
+    padding: 20px;
+    width: 400px;
+    background-color: rgba(255, 245, 238, 0.801);
+    border-radius: 8px;
+    columns: 2;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0,0, 0.5);
+}
+
+h2{
+    font-size: 1.6em;
+    grid-column-start: 1;
+    grid-column-end: 3 ;
+}
+
+.button{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color:  rgba(58, 179, 201, 1);
+}
+
+input{
+    border-radius: 5px;
+    text-align: center;
+    background-color: transparent;
+}
+
+input:focus{
+    background-color: rgba(0, 0,0, 0.025);
+}
+
+.button:hover{
+    background-color: rgba(58, 179, 201, 0.664);
+}
+
+.topnav {
+    background-color: rgba(118, 233, 248, 0.377);
+    overflow: hidden;
+    margin-bottom: 5px;
+  }
+
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: rgba(219, 224, 224, 0.315);
+    color: black;
+  }
+
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+  }

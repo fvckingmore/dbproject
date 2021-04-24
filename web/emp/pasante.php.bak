@@ -1,0 +1,68 @@
+<?php
+	if(!empty($_GET)) {
+		if($_GET["status"] == "ok") {
+			echo "<h2>Registro agregrado correctamente</h2>";
+
+		} else if($_GET["status"] == "error") {
+			echo "<h2>Error al agregar registro</h2>";
+		}
+	}
+?>
+
+<form action="addpas.php" method="post">
+	<h2>Pasante</h2>	
+  	<label>Cedula:</label>
+	<input type="text" name="ci" required><br><br>
+	<label>Farmacia:</label>
+	<input type="text" name="farmacia" required><br><br>
+	<label>Nombre:</label>
+	<input type="text" name="nombre" required><br><br>
+	<label>Apellido:</label>
+	<input type="text" name="apellido" required><br><br>
+	<label>Edad:</label>
+	<input type="text" name="edad" required><br><br>
+	<!--Cargo: Farmaceutico en BD-->
+	<label>Telefono:</label>
+	<input type="text" name="telefono" required><br><br>
+  
+	<h2>Pasantia</h2> 
+	<label>Institucion:</label>
+	<input type="text" name="institucion" required><br><br>
+	<label>Especialidad:</label>
+	<input type="text" name="especialidad" required><br><br>
+	<label>Fecha Inicio:</label>
+	<input type="date" name="inicio"><br><br>
+	<label>Fecha Final:</label>
+	<input type="date" name="final"><br><br>
+	<label>Numero de permiso:</label>
+	<input type="text" name="permiso" required><br><br>
+	<label>Minoria de edad</label>
+	<input type="checkbox" name="minoria" value="true" id="minoria" onclick="show()"><br><br>
+
+	<div id="oculto" style="display: none;">
+
+		<h2>Responsable</h2> 
+		<label>Cedula:</label>
+		<input type="text" name="ci_r"><br><br>
+		<label>Nombre:</label>
+		<input type="text" name="nombre_r"><br><br>
+		<label>Apellido:</label>
+		<input type="text" name="apellido_r"><br><br>
+		<label>Telefono:</label>
+		<input type="text" name="telefono_r"><br><br>
+	</div>
+
+	<script type="text/javascript">
+		function show() {
+ 			var x = document.getElementById("oculto");
+			if (x.style.display === "none") {
+				x.style.display = "block";
+			} else {
+				x.style.display = "none";
+			}
+		}
+	</script>
+
+	<input type="submit" value="Submit">
+</form>
+

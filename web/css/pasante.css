@@ -1,0 +1,139 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;	
+	font-family: sans-serif;
+	font-size: 12px;
+    color: white;
+	/*background-color:rgba(84, 109, 192, 0.9) ;
+*/}
+
+body{
+   
+    background-image: url("..//assets/imagen2.jpg");
+}
+
+form{
+    position: relative;
+    border-radius: 5px;
+    width: 500px;
+    margin: auto;
+ 
+    padding:20px;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.253);  
+    color: black ;
+    background-color: rgba(102, 195, 223, 0.76);
+}
+
+h2{
+    font-size: 1.5em;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+label{
+    color: white;
+}
+
+label,input{
+    padding-left: 10px;
+    width: 100%;
+    transition: 200ms;
+
+}
+
+input{
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background: transparent;
+}
+
+.labelPasantia{
+    margin-top: -34px;
+    text-align: left;
+    position: absolute;
+    color: white;
+   
+    z-index: -20;
+}
+
+.inputPasantia{
+    margin-top: 15px;
+}
+
+.inputPasantia:focus +.labelPasantia{
+    margin-top: -65px;
+    color: white;
+    
+}
+
+.inputPasantia:focus{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.checkbox{
+    width: 100px;
+}
+
+#tl{
+    margin-left: -460px;
+    margin-top: 27.5px;
+}
+
+#inputTl:focus+#tl{
+    transition: 200ms;
+    margin-top: -2.5px;
+    margin-left: -460px;
+    color: white;
+}
+
+.submit{
+    background-color: rgb(46, 43, 226);
+}
+
+.submit:hover{
+    background-color: rgba(0, 0,0, 0.6);
+}
+
+.idate{
+    width: 35%;
+}
+
+.ldate{
+    width: 20%;
+    padding-left: 0px;
+}
+
+.stop{
+    transition: 200ms;
+    color: white;
+    margin-top: -65px;
+}
+
+.topnav {
+    background-color: rgb(82, 140, 247);
+    overflow: hidden;
+  }
+
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: rgb(79, 152, 248);
+    color: black;
+  }
+
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
